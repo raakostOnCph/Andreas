@@ -15,19 +15,14 @@ public class Main {
 
      Node n = node1;
 
-        printFromHead(n);
+     Liste liste = new Liste();
+
+     liste.head = node1;
+     liste.tail = node3;
+
+        System.out.println(liste.printFromHead());
 
 
-    }
-
-    private static void printFromHead(Node n)
-    {
-        while (n != null) {
-
-            System.out.println(n.data);
-
-            n = n.next;
-        }
     }
 
 
