@@ -31,6 +31,21 @@ public class Liste
         return head == null && tail == null;
     }
 
+    String printFromTail() {
+
+        StringBuilder stringBuilder = new StringBuilder();
+
+        Node n = tail;
+
+        while (n != null) {
+
+            stringBuilder.append(n.data + " ");
+
+            n = n.previous;
+        }
+        return stringBuilder.toString().trim();
+
+    }
 
 
      String printFromHead()
