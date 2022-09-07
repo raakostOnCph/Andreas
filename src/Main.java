@@ -20,17 +20,11 @@ public class Main {
 //     liste.head = node1;
 //     liste.tail = node3;
 
-        Liste liste = new Liste();
+//        liste.insertFromHead(new Node("1"));
+//        liste.insertFromHead(new Node("2"));
+//        liste.insertFromHead(new Node("3"));
+//        liste.insertFromHead(new Node("4"));
 
-        liste.insertFromHead(new Node("1"));
-        liste.insertFromHead(new Node("2"));
-        liste.insertFromHead(new Node("3"));
-        liste.insertFromHead(new Node("4"));
-
-
-
-        System.out.println(liste.printFromHead());
-        System.out.println(liste.printFromTail());
 
 
 
