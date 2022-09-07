@@ -47,6 +47,10 @@ public class Liste
         return head == null && tail == null;
     }
 
+    boolean onlyOne() {
+        return head == tail && head != null ;
+    }
+
     String printFromTail() {
 
         StringBuilder stringBuilder = new StringBuilder();
@@ -101,7 +105,18 @@ public class Liste
 
     public Node insertFromHead(String s)
     {
-         return insertFromHead(new Node(s));
+        String [] strings = s.split(" ");
+
+        for (String string : strings) {
+            insertFromHead(new Node(string));
+        }
+
+         return head;
 
     }
+
+
+
+
+
 }

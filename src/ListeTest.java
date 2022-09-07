@@ -65,5 +65,13 @@ class ListeTest
     }
 
 
+    @Test
+    void smartInsertFromHead()
+    {
+        liste.insertFromHead("hej med dig");
+        assertEquals(false, liste.onlyOne());
+        assertEquals("hej med dig", liste.printFromTail());
 
+
+    }
 }
