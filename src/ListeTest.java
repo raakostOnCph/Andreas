@@ -47,8 +47,13 @@ class ListeTest
 
         assertEquals("3 2 1", liste.printFromHead());
 
+    }
 
+    @Test
+    void smartConstructor()
+    {
+        Liste smartListe = new Liste("hold da op mand");
 
-
+        assertEquals("hold da op mand", smartListe.printFromTail());
     }
 }

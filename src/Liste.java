@@ -4,7 +4,23 @@ public class Liste
     Node head = null;
     Node tail = null;
 
+    public Liste(String s)
+    {
 
+        String [] strings = s.split(" ");
+
+        for (String string : strings) {
+            insertFromHead(new Node(string));
+        }
+
+
+    }
+
+    public Liste()
+    {
+
+
+    }
 
     Node insertFromHead(Node node ) {
 
