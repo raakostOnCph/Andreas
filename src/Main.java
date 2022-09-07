@@ -26,7 +26,15 @@ public class Main {
 //        liste.insertFromHead(new Node("4"));
 
 
+Liste liste = new Liste("virker det her mon");
 
+        System.out.println(liste.printFromTail());
+
+        liste.insertFromHead("du");
+        System.out.println(liste.printFromTail());
+
+        liste.insertFromHead("onkel jørgen");
+        System.out.println(liste.printFromTail());
 
 
 
