@@ -56,4 +56,14 @@ class ListeTest
 
         assertEquals("hold da op mand", smartListe.printFromTail());
     }
+
+    @Test
+    void insertStringFromHead()
+    {
+        liste.insertFromHead("hej");
+        assertEquals("hej", liste.printFromTail());
+    }
+
+
+
 }

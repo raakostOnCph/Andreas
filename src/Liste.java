@@ -98,4 +98,10 @@ public class Liste
         head.previous = null;
 
     }
+
+    public Node insertFromHead(String s)
+    {
+         return insertFromHead(new Node(s));
+
+    }
 }
